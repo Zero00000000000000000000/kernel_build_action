@@ -18,7 +18,7 @@ jobs:
           kernel-url: https://github.com/D3nesyan/android_kernel_xiaomi_lavender
           kernel-dir: main
           kernel-branch: ruby
-          config: cas_defconfig
+          config: defconfig
           arch: arm64
           aosp-gcc: true
           aosp-clang: true
