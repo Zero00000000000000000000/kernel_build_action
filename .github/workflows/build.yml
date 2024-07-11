@@ -22,7 +22,7 @@ jobs:
           arch: arm64
           aosp-gcc: true
           aosp-clang: true
-          ksu: true
+          ksu: false
           ksu-version: 0.7.6_11458
           android-version: 12
           aosp-clang-version: r383902
