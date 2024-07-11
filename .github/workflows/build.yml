@@ -15,10 +15,10 @@ jobs:
     - name: neko kernel lite
       uses: dabao1955/kernel_build_action@main
       with:
-          kernel-url: https://github.com/D3nesyan/android_kernel_xiaomi_lavender
+          kernel-url: https://github.com/ArrowOS-Devices/android_kernel_xiaomi_sdm660-old/tree/arrow-12.1
           kernel-dir: main
-          kernel-branch: ruby
-          config: defconfig
+          kernel-branch: arrow-12.1
+          config: lavender_defconfig
           arch: arm64
           aosp-gcc: true
           aosp-clang: true
