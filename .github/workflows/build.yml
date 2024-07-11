@@ -1,5 +1,5 @@
 # A simple action usage
-name: Build Kernel
+name: neko kernel lite
 on:
   workflow_dispatch:
 
@@ -12,10 +12,10 @@ jobs:
       contents: read
 
     steps:
-    - name: Build Kernel
+    - name: neko kernel lite
       uses: dabao1955/kernel_build_action@main
       with:
-          kernel-url: https://github.com/AcmeUI-Devices/android_kernel_xiaomi_cas
+          kernel-url: https://github.com/D3nesyan/android_kernel_xiaomi_lavender
           kernel-dir: msm-4.19
           kernel-branch: taffy
           config: cas_defconfig
@@ -23,7 +23,7 @@ jobs:
           aosp-gcc: true
           aosp-clang: true
           ksu: true
-          ksu-version: main
+          ksu-version: 0.7.6
           android-version: 12
           aosp-clang-version: r383902
           python-27: true
